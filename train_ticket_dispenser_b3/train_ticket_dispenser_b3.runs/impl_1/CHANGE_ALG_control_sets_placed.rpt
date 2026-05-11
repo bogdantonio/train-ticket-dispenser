@@ -1,0 +1,107 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Mon Jun  2 15:35:38 2025
+| Host         : DESKTOP-K6LVBJO running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file CHANGE_ALG_control_sets_placed.rpt
+| Design       : CHANGE_ALG
+| Device       : xc7a35t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    29 |
+|    Minimum number of control sets                        |    29 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   117 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    29 |
+| >= 0 to < 4        |    11 |
+| >= 4 to < 6        |     8 |
+| >= 6 to < 8        |     6 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     2 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     2 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              64 |           21 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              21 |            9 |
+| Yes          | No                    | No                     |              74 |           41 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              36 |           11 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++---------------------------+-------------------+-----------------------------+------------------+----------------+--------------+
+|        Clock Signal       |   Enable Signal   |       Set/Reset Signal      | Slice Load Count | Bel Load Count | Bels / Slice |
++---------------------------+-------------------+-----------------------------+------------------+----------------+--------------+
+|  CLK_IBUF_BUFG            | bill_1[0]_i_1_n_0 | bill_1[5]_i_1_n_0           |                1 |              1 |         1.00 |
+|  CB_reg_i_2_n_0           |                   |                             |                1 |              1 |         1.00 |
+|  DONE__0                  |                   |                             |                1 |              1 |         1.00 |
+|  NR_reg_i_2_n_0           |                   |                             |                1 |              1 |         1.00 |
+|  ITCC1/CAT_reg[6]_i_2_n_0 |                   | ITCC1/CAT_reg[1]_i_2_n_0    |                1 |              1 |         1.00 |
+|  ITCC2/CAT_reg[6]_i_2_n_0 |                   | ITCC2/CAT_reg[1]_i_2_n_0    |                1 |              1 |         1.00 |
+|  ITCC3/CAT_reg[6]_i_2_n_0 |                   | ITCC3/CAT_reg[1]_i_2__0_n_0 |                1 |              1 |         1.00 |
+|  ITCC1/CAT_reg[6]_i_2_n_0 |                   | ITCC1/CAT_reg[6]_i_3_n_0    |                1 |              2 |         2.00 |
+|  ITCC2/CAT_reg[6]_i_2_n_0 |                   | ITCC2/CAT_reg[6]_i_3__0_n_0 |                1 |              2 |         2.00 |
+|  ITCC3/CAT_reg[6]_i_2_n_0 |                   | ITCC3/CAT_reg[6]_i_3_n_0    |                1 |              2 |         2.00 |
+|  TEN_reg[2]_i_1_n_0       |                   |                             |                1 |              3 |         3.00 |
+|  ITCC1/CAT_reg[5]_i_2_n_0 |                   | ITCC1/CAT_reg[5]_i_3_n_0    |                1 |              4 |         4.00 |
+|  ITCC2/CAT_reg[5]_i_2_n_0 |                   | ITCC2/CAT_reg[5]_i_3_n_0    |                1 |              4 |         4.00 |
+|  ITCC3/CAT_reg[5]_i_2_n_0 |                   | ITCC3/CAT_reg[5]_i_3__0_n_0 |                1 |              4 |         4.00 |
+|  CLK_IBUF_BUFG            | bill_2[0]_i_1_n_0 |                             |                2 |              5 |         2.50 |
+|  CLK_IBUF_BUFG            | rest_200          |                             |                3 |              5 |         1.67 |
+|  CLK_IBUF_BUFG            | rest_5[3]_i_1_n_0 |                             |                3 |              5 |         1.67 |
+|  CLK_IBUF_BUFG            | rest_500          |                             |                2 |              5 |         2.50 |
+|  CLK_IBUF_BUFG            | rest_100          |                             |                2 |              5 |         2.50 |
+|  FD/out[0]                | DONE              |                             |                2 |              6 |         3.00 |
+|  CLK_IBUF_BUFG            | bill_2[0]_i_1_n_0 | bill_2[7]_i_1_n_0           |                2 |              7 |         3.50 |
+|  CLK_IBUF_BUFG            | rest_200          | bill_20[7]_i_1_n_0          |                2 |              7 |         3.50 |
+|  CLK_IBUF_BUFG            | rest_5[3]_i_1_n_0 | bill_5[7]_i_1_n_0           |                2 |              7 |         3.50 |
+|  CLK_IBUF_BUFG            | rest_500          | bill_50[7]_i_1_n_0          |                2 |              7 |         3.50 |
+|  CLK_IBUF_BUFG            | rest_100          | bill_10[7]_i_1_n_0          |                2 |              7 |         3.50 |
+|  CLK_IBUF_BUFG            | bill_1[0]_i_1_n_0 |                             |                4 |             11 |         2.75 |
+|  UNIT_reg[0]_i_2_n_0      |                   |                             |                3 |             11 |         3.67 |
+|  CLK_IBUF_BUFG            | COSTX[31]_i_1_n_0 |                             |               23 |             32 |         1.39 |
+|  CLK_IBUF_BUFG            |                   |                             |               14 |             47 |         3.36 |
++---------------------------+-------------------+-----------------------------+------------------+----------------+--------------+
+
+

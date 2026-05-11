@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1748867598">
+  <File Type="PA-TCL" Name="CHANGE_ALG.tcl"/>
+  <File Type="REPORTS-TCL" Name="CHANGE_ALG_reports.tcl"/>
+  <File Type="INIT-TIMING" Name="CHANGE_ALG_timing_summary_init.rpt"/>
+  <File Type="OPT-DCP" Name="CHANGE_ALG_opt.dcp"/>
+  <File Type="OPT-DRC" Name="CHANGE_ALG_drc_opted.rpt"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="CHANGE_ALG_methodology_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="CHANGE_ALG.hwdef"/>
+  <File Type="OPT-TIMING" Name="CHANGE_ALG_timing_summary_opted.rpt"/>
+  <File Type="OPT-RQA-PB" Name="CHANGE_ALG_rqa_opted.pb"/>
+  <File Type="PWROPT-DCP" Name="CHANGE_ALG_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="CHANGE_ALG_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="CHANGE_ALG_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="CHANGE_ALG_placed.dcp"/>
+  <File Type="PLACE-IO" Name="CHANGE_ALG_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="CHANGE_ALG_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="CHANGE_ALG_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="CHANGE_ALG_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="CHANGE_ALG_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="CHANGE_ALG_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="CHANGE_ALG_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="CHANGE_ALG_timing_summary_placed.rpt"/>
+  <File Type="PLACE-RQA-PB" Name="CHANGE_ALG_rqa_placed.pb"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="CHANGE_ALG_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="CHANGE_ALG_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="CHANGE_ALG_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="CHANGE_ALG_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-TIMING" Name="CHANGE_ALG_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="CHANGE_ALG_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="CHANGE_ALG_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="CHANGE_ALG_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="CHANGE_ALG_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="CHANGE_ALG_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="CHANGE_ALG_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="CHANGE_ALG_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="CHANGE_ALG_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="CHANGE_ALG_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="CHANGE_ALG_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="CHANGE_ALG_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="CHANGE_ALG_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="CHANGE_ALG_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="CHANGE_ALG_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="CHANGE_ALG_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="CHANGE_ALG_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="CHANGE_ALG_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="CHANGE_ALG_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="CHANGE_ALG_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="CHANGE_ALG_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="CHANGE_ALG_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="CHANGE_ALG_bus_skew_routed.rpx"/>
+  <File Type="ROUTE-RQS-PB" Name="CHANGE_ALG_rqs_routed.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="CHANGE_ALG_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="CHANGE_ALG_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="CHANGE_ALG_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="CHANGE_ALG_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="CHANGE_ALG_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="CHANGE_ALG_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="CHANGE_ALG_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="CHANGE_ALG_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BG-BIT" Name="CHANGE_ALG.bit"/>
+  <File Type="BG-BIN" Name="CHANGE_ALG.bin"/>
+  <File Type="BITSTR-MSK" Name="CHANGE_ALG.msk"/>
+  <File Type="BITSTR-RBT" Name="CHANGE_ALG.rbt"/>
+  <File Type="BITSTR-NKY" Name="CHANGE_ALG.nky"/>
+  <File Type="BITSTR-BMM" Name="CHANGE_ALG_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="CHANGE_ALG.mmi"/>
+  <File Type="PDI-FILE" Name="CHANGE_ALG.pdi"/>
+  <File Type="BOOT-PDI-FILE" Name="CHANGE_ALG_boot.pdi"/>
+  <File Type="PL-PDI-FILE" Name="CHANGE_ALG_pld.pdi"/>
+  <File Type="RCFI_FILE" Name="CHANGE_ALG.rcfi"/>
+  <File Type="CFI_FILE" Name="CHANGE_ALG.cfi"/>
+  <File Type="RNPI_FILE" Name="CHANGE_ALG.rnpi"/>
+  <File Type="NPI_FILE" Name="CHANGE_ALG.npi"/>
+  <File Type="RBD_FILE" Name="CHANGE_ALG.rbd"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="CHANGE_ALG.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="CHANGE_ALG.sysdef"/>
+  <File Type="BG-BGN" Name="CHANGE_ALG.bgn"/>
+  <File Type="BG-DRC" Name="CHANGE_ALG.drc"/>
+  <File Type="RDI-RDI" Name="CHANGE_ALG.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="ROUTE-RQS" Name="CHANGE_ALG_routed.rqs"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="CHANGE_ALG_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/FREQUENCY_DIVIDER.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/INT_TO_CAT_INVERTER.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/THREE_DIGIT_SSD.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/CHANGE_ALG.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/BTN_DEBOUNCER.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/CASH_BUILDER.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/COST_COMPUTATION.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/CU.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/DB_COUNTER.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/DFF_DB.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/DISTANCE_COUNTERS.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/EU.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/FREQUENCY_DIVIDER_CU.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/INPUT_BILL_COUNTER.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/INPUT_BILL_LOCK.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/INTERN_BILL_COUNTER.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/MONEY_BUILDER.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/MONEY_UPDATE.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/NR_TO_CAT_CONVERTER.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/TICKET_MANAGER.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/main.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="CHANGE_ALG"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/../../Basys-3-Master.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/TEST_COUNTER.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

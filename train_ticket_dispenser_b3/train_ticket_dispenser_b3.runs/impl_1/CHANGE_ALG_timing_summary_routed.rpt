@@ -1,0 +1,1001 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Mon Jun  2 15:36:30 2025
+| Host         : DESKTOP-K6LVBJO running 64-bit major release  (build 9200)
+| Command      : report_timing_summary -max_paths 10 -report_unconstrained -file CHANGE_ALG_timing_summary_routed.rpt -pb CHANGE_ALG_timing_summary_routed.pb -rpx CHANGE_ALG_timing_summary_routed.rpx -warn_on_violation
+| Design       : CHANGE_ALG
+| Device       : 7a35t-cpg236
+| Speed File   : -1  PRODUCTION 1.23 2018-06-13
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+  Inter-SLR Compensation                     :  Conservative
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+------------------------------------------------------------------------------------------------
+| Report Methodology
+| ------------------
+------------------------------------------------------------------------------------------------
+
+Rule       Severity          Description                     Violations  
+---------  ----------------  ------------------------------  ----------  
+TIMING-17  Critical Warning  Non-clocked sequential cell     157         
+LUTAR-1    Warning           LUT drives async reset alert    9           
+TIMING-20  Warning           Non-clocked latch               38          
+LATCH-1    Advisory          Existing latches in the design  1           
+
+Note: This report is based on the most recent report_methodology run and may not be up-to-date. Run report_methodology on the current design for the latest report.
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock (366)
+2. checking constant_clock (0)
+3. checking pulse_width_clock (0)
+4. checking unconstrained_internal_endpoints (360)
+5. checking no_input_delay (0)
+6. checking no_output_delay (12)
+7. checking multiple_clock (0)
+8. checking generated_clocks (0)
+9. checking loops (0)
+10. checking partial_input_delay (0)
+11. checking partial_output_delay (0)
+12. checking latch_loops (0)
+
+1. checking no_clock (366)
+--------------------------
+ There are 151 register/latch pins with no clock driven by root clock pin: CLK (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: COSTX_reg[0]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: COSTX_reg[10]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: COSTX_reg[11]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: COSTX_reg[12]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: COSTX_reg[13]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: COSTX_reg[14]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: COSTX_reg[15]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: COSTX_reg[16]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: COSTX_reg[17]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: COSTX_reg[18]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: COSTX_reg[19]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: COSTX_reg[1]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: COSTX_reg[20]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: COSTX_reg[21]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: COSTX_reg[22]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: COSTX_reg[23]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: COSTX_reg[24]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: COSTX_reg[25]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: COSTX_reg[26]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: COSTX_reg[27]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: COSTX_reg[28]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: COSTX_reg[29]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: COSTX_reg[2]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: COSTX_reg[30]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: COSTX_reg[31]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: COSTX_reg[3]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: COSTX_reg[4]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: COSTX_reg[5]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: COSTX_reg[6]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: COSTX_reg[7]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: COSTX_reg[8]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: COSTX_reg[9]/Q (HIGH)
+
+ There are 6 register/latch pins with no clock driven by root clock pin: FD/n_reg[25]/Q (HIGH)
+
+ There are 7 register/latch pins with no clock driven by root clock pin: FSM_onehot_next_show_reg[2]/Q (HIGH)
+
+ There are 7 register/latch pins with no clock driven by root clock pin: FSM_onehot_next_show_reg[3]/Q (HIGH)
+
+ There are 11 register/latch pins with no clock driven by root clock pin: FSM_onehot_show_reg[0]/Q (HIGH)
+
+ There are 11 register/latch pins with no clock driven by root clock pin: FSM_onehot_show_reg[1]/Q (HIGH)
+
+ There are 11 register/latch pins with no clock driven by root clock pin: FSM_onehot_show_reg[2]/Q (HIGH)
+
+ There are 14 register/latch pins with no clock driven by root clock pin: FSM_onehot_show_reg[3]/Q (HIGH)
+
+ There are 14 register/latch pins with no clock driven by root clock pin: FSM_onehot_show_reg[4]/Q (HIGH)
+
+ There are 14 register/latch pins with no clock driven by root clock pin: FSM_onehot_show_reg[5]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: FSM_sequential_STATE_reg[0]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: FSM_sequential_STATE_reg[1]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: FSM_sequential_STATE_reg[2]/Q (HIGH)
+
+ There are 4 register/latch pins with no clock driven by root clock pin: HUN_reg[0]/Q (HIGH)
+
+ There are 7 register/latch pins with no clock driven by root clock pin: HUN_reg[1]/Q (HIGH)
+
+ There are 7 register/latch pins with no clock driven by root clock pin: HUN_reg[2]/Q (HIGH)
+
+ There are 7 register/latch pins with no clock driven by root clock pin: HUN_reg[3]/Q (HIGH)
+
+ There are 4 register/latch pins with no clock driven by root clock pin: TEN_reg[0]/Q (HIGH)
+
+ There are 7 register/latch pins with no clock driven by root clock pin: TEN_reg[1]/Q (HIGH)
+
+ There are 7 register/latch pins with no clock driven by root clock pin: TEN_reg[2]/Q (HIGH)
+
+ There are 4 register/latch pins with no clock driven by root clock pin: UNIT_reg[0]/Q (HIGH)
+
+
+2. checking constant_clock (0)
+------------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock (0)
+---------------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints (360)
+--------------------------------------------------
+ There are 360 pins that are not constrained for maximum delay. (HIGH)
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay (0)
+------------------------------
+ There are 0 input ports with no input delay specified.
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay (12)
+--------------------------------
+ There are 12 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock (0)
+------------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks (0)
+--------------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops (0)
+---------------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay (0)
+------------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay (0)
+-------------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops (0)
+----------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+        inf        0.000                      0                  372          inf        0.000                      0                  372           NA           NA                      NA                    NA  
+
+
+There are no user specified timing constraints.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| User Ignored Path Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+
+
+------------------------------------------------------------------------------------------------
+| Unconstrained Path Table
+| ------------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+(none)                                    
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------------
+Path Group:  (none)
+From Clock:  
+  To Clock:  
+
+Max Delay           372 Endpoints
+Min Delay           372 Endpoints
+--------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 COSTX_reg[1]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            COSTX_reg[3]/CE
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        9.660ns  (logic 3.425ns (35.454%)  route 6.235ns (64.546%))
+  Logic Levels:           13  (CARRY4=8 FDRE=1 LUT1=1 LUT2=1 LUT6=2)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X63Y0          FDRE                         0.000     0.000 r  COSTX_reg[1]/C
+    SLICE_X63Y0          FDRE (Prop_fdre_C_Q)         0.456     0.456 f  COSTX_reg[1]/Q
+                         net (fo=12, routed)          1.574     2.030    COSTX_reg_n_0_[1]
+    SLICE_X54Y0          LUT1 (Prop_lut1_I0_O)        0.124     2.154 r  COSTX[0]_i_4/O
+                         net (fo=1, routed)           0.000     2.154    COSTX[0]_i_4_n_0
+    SLICE_X54Y0          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     2.687 r  COSTX_reg[0]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     2.687    COSTX_reg[0]_i_2_n_0
+    SLICE_X54Y1          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     2.804 r  COSTX_reg[7]_i_6/CO[3]
+                         net (fo=1, routed)           0.000     2.804    COSTX_reg[7]_i_6_n_0
+    SLICE_X54Y2          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     2.921 r  COSTX_reg[11]_i_6/CO[3]
+                         net (fo=1, routed)           0.000     2.921    COSTX_reg[11]_i_6_n_0
+    SLICE_X54Y3          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.038 r  COSTX_reg[15]_i_6/CO[3]
+                         net (fo=1, routed)           0.000     3.038    COSTX_reg[15]_i_6_n_0
+    SLICE_X54Y4          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.155 r  COSTX_reg[19]_i_6/CO[3]
+                         net (fo=1, routed)           0.000     3.155    COSTX_reg[19]_i_6_n_0
+    SLICE_X54Y5          CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.323     3.478 f  COSTX_reg[23]_i_6/O[1]
+                         net (fo=2, routed)           0.828     4.307    in11[21]
+    SLICE_X55Y4          LUT2 (Prop_lut2_I1_O)        0.306     4.613 r  bill_10[0]_i_12/O
+                         net (fo=1, routed)           0.000     4.613    bill_10[0]_i_12_n_0
+    SLICE_X55Y4          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550     5.163 r  bill_10_reg[0]_i_5/CO[3]
+                         net (fo=1, routed)           0.000     5.163    bill_10_reg[0]_i_5_n_0
+    SLICE_X55Y5          CARRY4 (Prop_carry4_CI_CO[2])
+                                                      0.228     5.391 r  bill_10_reg[0]_i_4/CO[2]
+                         net (fo=4, routed)           1.410     6.800    NEXT_STATE210_in
+    SLICE_X62Y9          LUT6 (Prop_lut6_I1_O)        0.313     7.113 r  COSTX[31]_i_4/O
+                         net (fo=1, routed)           0.809     7.922    COSTX[31]_i_4_n_0
+    SLICE_X59Y9          LUT6 (Prop_lut6_I3_O)        0.124     8.046 r  COSTX[31]_i_1/O
+                         net (fo=32, routed)          1.614     9.660    COSTX[31]_i_1_n_0
+    SLICE_X65Y0          FDRE                                         r  COSTX_reg[3]/CE
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 COSTX_reg[1]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            COSTX_reg[4]/CE
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        9.660ns  (logic 3.425ns (35.454%)  route 6.235ns (64.546%))
+  Logic Levels:           13  (CARRY4=8 FDRE=1 LUT1=1 LUT2=1 LUT6=2)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X63Y0          FDRE                         0.000     0.000 r  COSTX_reg[1]/C
+    SLICE_X63Y0          FDRE (Prop_fdre_C_Q)         0.456     0.456 f  COSTX_reg[1]/Q
+                         net (fo=12, routed)          1.574     2.030    COSTX_reg_n_0_[1]
+    SLICE_X54Y0          LUT1 (Prop_lut1_I0_O)        0.124     2.154 r  COSTX[0]_i_4/O
+                         net (fo=1, routed)           0.000     2.154    COSTX[0]_i_4_n_0
+    SLICE_X54Y0          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     2.687 r  COSTX_reg[0]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     2.687    COSTX_reg[0]_i_2_n_0
+    SLICE_X54Y1          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     2.804 r  COSTX_reg[7]_i_6/CO[3]
+                         net (fo=1, routed)           0.000     2.804    COSTX_reg[7]_i_6_n_0
+    SLICE_X54Y2          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     2.921 r  COSTX_reg[11]_i_6/CO[3]
+                         net (fo=1, routed)           0.000     2.921    COSTX_reg[11]_i_6_n_0
+    SLICE_X54Y3          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.038 r  COSTX_reg[15]_i_6/CO[3]
+                         net (fo=1, routed)           0.000     3.038    COSTX_reg[15]_i_6_n_0
+    SLICE_X54Y4          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.155 r  COSTX_reg[19]_i_6/CO[3]
+                         net (fo=1, routed)           0.000     3.155    COSTX_reg[19]_i_6_n_0
+    SLICE_X54Y5          CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.323     3.478 f  COSTX_reg[23]_i_6/O[1]
+                         net (fo=2, routed)           0.828     4.307    in11[21]
+    SLICE_X55Y4          LUT2 (Prop_lut2_I1_O)        0.306     4.613 r  bill_10[0]_i_12/O
+                         net (fo=1, routed)           0.000     4.613    bill_10[0]_i_12_n_0
+    SLICE_X55Y4          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550     5.163 r  bill_10_reg[0]_i_5/CO[3]
+                         net (fo=1, routed)           0.000     5.163    bill_10_reg[0]_i_5_n_0
+    SLICE_X55Y5          CARRY4 (Prop_carry4_CI_CO[2])
+                                                      0.228     5.391 r  bill_10_reg[0]_i_4/CO[2]
+                         net (fo=4, routed)           1.410     6.800    NEXT_STATE210_in
+    SLICE_X62Y9          LUT6 (Prop_lut6_I1_O)        0.313     7.113 r  COSTX[31]_i_4/O
+                         net (fo=1, routed)           0.809     7.922    COSTX[31]_i_4_n_0
+    SLICE_X59Y9          LUT6 (Prop_lut6_I3_O)        0.124     8.046 r  COSTX[31]_i_1/O
+                         net (fo=32, routed)          1.614     9.660    COSTX[31]_i_1_n_0
+    SLICE_X65Y0          FDRE                                         r  COSTX_reg[4]/CE
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 COSTX_reg[1]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            COSTX_reg[2]/CE
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        9.521ns  (logic 3.425ns (35.975%)  route 6.096ns (64.025%))
+  Logic Levels:           13  (CARRY4=8 FDRE=1 LUT1=1 LUT2=1 LUT6=2)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X63Y0          FDRE                         0.000     0.000 r  COSTX_reg[1]/C
+    SLICE_X63Y0          FDRE (Prop_fdre_C_Q)         0.456     0.456 f  COSTX_reg[1]/Q
+                         net (fo=12, routed)          1.574     2.030    COSTX_reg_n_0_[1]
+    SLICE_X54Y0          LUT1 (Prop_lut1_I0_O)        0.124     2.154 r  COSTX[0]_i_4/O
+                         net (fo=1, routed)           0.000     2.154    COSTX[0]_i_4_n_0
+    SLICE_X54Y0          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     2.687 r  COSTX_reg[0]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     2.687    COSTX_reg[0]_i_2_n_0
+    SLICE_X54Y1          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     2.804 r  COSTX_reg[7]_i_6/CO[3]
+                         net (fo=1, routed)           0.000     2.804    COSTX_reg[7]_i_6_n_0
+    SLICE_X54Y2          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     2.921 r  COSTX_reg[11]_i_6/CO[3]
+                         net (fo=1, routed)           0.000     2.921    COSTX_reg[11]_i_6_n_0
+    SLICE_X54Y3          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.038 r  COSTX_reg[15]_i_6/CO[3]
+                         net (fo=1, routed)           0.000     3.038    COSTX_reg[15]_i_6_n_0
+    SLICE_X54Y4          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.155 r  COSTX_reg[19]_i_6/CO[3]
+                         net (fo=1, routed)           0.000     3.155    COSTX_reg[19]_i_6_n_0
+    SLICE_X54Y5          CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.323     3.478 f  COSTX_reg[23]_i_6/O[1]
+                         net (fo=2, routed)           0.828     4.307    in11[21]
+    SLICE_X55Y4          LUT2 (Prop_lut2_I1_O)        0.306     4.613 r  bill_10[0]_i_12/O
+                         net (fo=1, routed)           0.000     4.613    bill_10[0]_i_12_n_0
+    SLICE_X55Y4          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550     5.163 r  bill_10_reg[0]_i_5/CO[3]
+                         net (fo=1, routed)           0.000     5.163    bill_10_reg[0]_i_5_n_0
+    SLICE_X55Y5          CARRY4 (Prop_carry4_CI_CO[2])
+                                                      0.228     5.391 r  bill_10_reg[0]_i_4/CO[2]
+                         net (fo=4, routed)           1.410     6.800    NEXT_STATE210_in
+    SLICE_X62Y9          LUT6 (Prop_lut6_I1_O)        0.313     7.113 r  COSTX[31]_i_4/O
+                         net (fo=1, routed)           0.809     7.922    COSTX[31]_i_4_n_0
+    SLICE_X59Y9          LUT6 (Prop_lut6_I3_O)        0.124     8.046 r  COSTX[31]_i_1/O
+                         net (fo=32, routed)          1.474     9.521    COSTX[31]_i_1_n_0
+    SLICE_X64Y0          FDRE                                         r  COSTX_reg[2]/CE
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 COSTX_reg[1]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            COSTX_reg[5]/CE
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        9.521ns  (logic 3.425ns (35.975%)  route 6.096ns (64.025%))
+  Logic Levels:           13  (CARRY4=8 FDRE=1 LUT1=1 LUT2=1 LUT6=2)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X63Y0          FDRE                         0.000     0.000 r  COSTX_reg[1]/C
+    SLICE_X63Y0          FDRE (Prop_fdre_C_Q)         0.456     0.456 f  COSTX_reg[1]/Q
+                         net (fo=12, routed)          1.574     2.030    COSTX_reg_n_0_[1]
+    SLICE_X54Y0          LUT1 (Prop_lut1_I0_O)        0.124     2.154 r  COSTX[0]_i_4/O
+                         net (fo=1, routed)           0.000     2.154    COSTX[0]_i_4_n_0
+    SLICE_X54Y0          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     2.687 r  COSTX_reg[0]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     2.687    COSTX_reg[0]_i_2_n_0
+    SLICE_X54Y1          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     2.804 r  COSTX_reg[7]_i_6/CO[3]
+                         net (fo=1, routed)           0.000     2.804    COSTX_reg[7]_i_6_n_0
+    SLICE_X54Y2          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     2.921 r  COSTX_reg[11]_i_6/CO[3]
+                         net (fo=1, routed)           0.000     2.921    COSTX_reg[11]_i_6_n_0
+    SLICE_X54Y3          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.038 r  COSTX_reg[15]_i_6/CO[3]
+                         net (fo=1, routed)           0.000     3.038    COSTX_reg[15]_i_6_n_0
+    SLICE_X54Y4          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.155 r  COSTX_reg[19]_i_6/CO[3]
+                         net (fo=1, routed)           0.000     3.155    COSTX_reg[19]_i_6_n_0
+    SLICE_X54Y5          CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.323     3.478 f  COSTX_reg[23]_i_6/O[1]
+                         net (fo=2, routed)           0.828     4.307    in11[21]
+    SLICE_X55Y4          LUT2 (Prop_lut2_I1_O)        0.306     4.613 r  bill_10[0]_i_12/O
+                         net (fo=1, routed)           0.000     4.613    bill_10[0]_i_12_n_0
+    SLICE_X55Y4          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550     5.163 r  bill_10_reg[0]_i_5/CO[3]
+                         net (fo=1, routed)           0.000     5.163    bill_10_reg[0]_i_5_n_0
+    SLICE_X55Y5          CARRY4 (Prop_carry4_CI_CO[2])
+                                                      0.228     5.391 r  bill_10_reg[0]_i_4/CO[2]
+                         net (fo=4, routed)           1.410     6.800    NEXT_STATE210_in
+    SLICE_X62Y9          LUT6 (Prop_lut6_I1_O)        0.313     7.113 r  COSTX[31]_i_4/O
+                         net (fo=1, routed)           0.809     7.922    COSTX[31]_i_4_n_0
+    SLICE_X59Y9          LUT6 (Prop_lut6_I3_O)        0.124     8.046 r  COSTX[31]_i_1/O
+                         net (fo=32, routed)          1.474     9.521    COSTX[31]_i_1_n_0
+    SLICE_X64Y0          FDRE                                         r  COSTX_reg[5]/CE
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 COSTX_reg[1]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            COSTX_reg[8]/CE
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        9.409ns  (logic 3.425ns (36.403%)  route 5.984ns (63.597%))
+  Logic Levels:           13  (CARRY4=8 FDRE=1 LUT1=1 LUT2=1 LUT6=2)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X63Y0          FDRE                         0.000     0.000 r  COSTX_reg[1]/C
+    SLICE_X63Y0          FDRE (Prop_fdre_C_Q)         0.456     0.456 f  COSTX_reg[1]/Q
+                         net (fo=12, routed)          1.574     2.030    COSTX_reg_n_0_[1]
+    SLICE_X54Y0          LUT1 (Prop_lut1_I0_O)        0.124     2.154 r  COSTX[0]_i_4/O
+                         net (fo=1, routed)           0.000     2.154    COSTX[0]_i_4_n_0
+    SLICE_X54Y0          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     2.687 r  COSTX_reg[0]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     2.687    COSTX_reg[0]_i_2_n_0
+    SLICE_X54Y1          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     2.804 r  COSTX_reg[7]_i_6/CO[3]
+                         net (fo=1, routed)           0.000     2.804    COSTX_reg[7]_i_6_n_0
+    SLICE_X54Y2          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     2.921 r  COSTX_reg[11]_i_6/CO[3]
+                         net (fo=1, routed)           0.000     2.921    COSTX_reg[11]_i_6_n_0
+    SLICE_X54Y3          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.038 r  COSTX_reg[15]_i_6/CO[3]
+                         net (fo=1, routed)           0.000     3.038    COSTX_reg[15]_i_6_n_0
+    SLICE_X54Y4          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.155 r  COSTX_reg[19]_i_6/CO[3]
+                         net (fo=1, routed)           0.000     3.155    COSTX_reg[19]_i_6_n_0
+    SLICE_X54Y5          CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.323     3.478 f  COSTX_reg[23]_i_6/O[1]
+                         net (fo=2, routed)           0.828     4.307    in11[21]
+    SLICE_X55Y4          LUT2 (Prop_lut2_I1_O)        0.306     4.613 r  bill_10[0]_i_12/O
+                         net (fo=1, routed)           0.000     4.613    bill_10[0]_i_12_n_0
+    SLICE_X55Y4          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550     5.163 r  bill_10_reg[0]_i_5/CO[3]
+                         net (fo=1, routed)           0.000     5.163    bill_10_reg[0]_i_5_n_0
+    SLICE_X55Y5          CARRY4 (Prop_carry4_CI_CO[2])
+                                                      0.228     5.391 r  bill_10_reg[0]_i_4/CO[2]
+                         net (fo=4, routed)           1.410     6.800    NEXT_STATE210_in
+    SLICE_X62Y9          LUT6 (Prop_lut6_I1_O)        0.313     7.113 r  COSTX[31]_i_4/O
+                         net (fo=1, routed)           0.809     7.922    COSTX[31]_i_4_n_0
+    SLICE_X59Y9          LUT6 (Prop_lut6_I3_O)        0.124     8.046 r  COSTX[31]_i_1/O
+                         net (fo=32, routed)          1.362     9.409    COSTX[31]_i_1_n_0
+    SLICE_X53Y1          FDRE                                         r  COSTX_reg[8]/CE
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 COSTX_reg[1]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            COSTX_reg[6]/CE
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        9.402ns  (logic 3.425ns (36.430%)  route 5.977ns (63.570%))
+  Logic Levels:           13  (CARRY4=8 FDRE=1 LUT1=1 LUT2=1 LUT6=2)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X63Y0          FDRE                         0.000     0.000 r  COSTX_reg[1]/C
+    SLICE_X63Y0          FDRE (Prop_fdre_C_Q)         0.456     0.456 f  COSTX_reg[1]/Q
+                         net (fo=12, routed)          1.574     2.030    COSTX_reg_n_0_[1]
+    SLICE_X54Y0          LUT1 (Prop_lut1_I0_O)        0.124     2.154 r  COSTX[0]_i_4/O
+                         net (fo=1, routed)           0.000     2.154    COSTX[0]_i_4_n_0
+    SLICE_X54Y0          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     2.687 r  COSTX_reg[0]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     2.687    COSTX_reg[0]_i_2_n_0
+    SLICE_X54Y1          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     2.804 r  COSTX_reg[7]_i_6/CO[3]
+                         net (fo=1, routed)           0.000     2.804    COSTX_reg[7]_i_6_n_0
+    SLICE_X54Y2          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     2.921 r  COSTX_reg[11]_i_6/CO[3]
+                         net (fo=1, routed)           0.000     2.921    COSTX_reg[11]_i_6_n_0
+    SLICE_X54Y3          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.038 r  COSTX_reg[15]_i_6/CO[3]
+                         net (fo=1, routed)           0.000     3.038    COSTX_reg[15]_i_6_n_0
+    SLICE_X54Y4          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.155 r  COSTX_reg[19]_i_6/CO[3]
+                         net (fo=1, routed)           0.000     3.155    COSTX_reg[19]_i_6_n_0
+    SLICE_X54Y5          CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.323     3.478 f  COSTX_reg[23]_i_6/O[1]
+                         net (fo=2, routed)           0.828     4.307    in11[21]
+    SLICE_X55Y4          LUT2 (Prop_lut2_I1_O)        0.306     4.613 r  bill_10[0]_i_12/O
+                         net (fo=1, routed)           0.000     4.613    bill_10[0]_i_12_n_0
+    SLICE_X55Y4          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550     5.163 r  bill_10_reg[0]_i_5/CO[3]
+                         net (fo=1, routed)           0.000     5.163    bill_10_reg[0]_i_5_n_0
+    SLICE_X55Y5          CARRY4 (Prop_carry4_CI_CO[2])
+                                                      0.228     5.391 r  bill_10_reg[0]_i_4/CO[2]
+                         net (fo=4, routed)           1.410     6.800    NEXT_STATE210_in
+    SLICE_X62Y9          LUT6 (Prop_lut6_I1_O)        0.313     7.113 r  COSTX[31]_i_4/O
+                         net (fo=1, routed)           0.809     7.922    COSTX[31]_i_4_n_0
+    SLICE_X59Y9          LUT6 (Prop_lut6_I3_O)        0.124     8.046 r  COSTX[31]_i_1/O
+                         net (fo=32, routed)          1.355     9.402    COSTX[31]_i_1_n_0
+    SLICE_X64Y1          FDRE                                         r  COSTX_reg[6]/CE
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 COSTX_reg[1]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            COSTX_reg[25]/CE
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        9.372ns  (logic 3.425ns (36.544%)  route 5.947ns (63.456%))
+  Logic Levels:           13  (CARRY4=8 FDRE=1 LUT1=1 LUT2=1 LUT6=2)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X63Y0          FDRE                         0.000     0.000 r  COSTX_reg[1]/C
+    SLICE_X63Y0          FDRE (Prop_fdre_C_Q)         0.456     0.456 f  COSTX_reg[1]/Q
+                         net (fo=12, routed)          1.574     2.030    COSTX_reg_n_0_[1]
+    SLICE_X54Y0          LUT1 (Prop_lut1_I0_O)        0.124     2.154 r  COSTX[0]_i_4/O
+                         net (fo=1, routed)           0.000     2.154    COSTX[0]_i_4_n_0
+    SLICE_X54Y0          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     2.687 r  COSTX_reg[0]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     2.687    COSTX_reg[0]_i_2_n_0
+    SLICE_X54Y1          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     2.804 r  COSTX_reg[7]_i_6/CO[3]
+                         net (fo=1, routed)           0.000     2.804    COSTX_reg[7]_i_6_n_0
+    SLICE_X54Y2          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     2.921 r  COSTX_reg[11]_i_6/CO[3]
+                         net (fo=1, routed)           0.000     2.921    COSTX_reg[11]_i_6_n_0
+    SLICE_X54Y3          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.038 r  COSTX_reg[15]_i_6/CO[3]
+                         net (fo=1, routed)           0.000     3.038    COSTX_reg[15]_i_6_n_0
+    SLICE_X54Y4          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.155 r  COSTX_reg[19]_i_6/CO[3]
+                         net (fo=1, routed)           0.000     3.155    COSTX_reg[19]_i_6_n_0
+    SLICE_X54Y5          CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.323     3.478 f  COSTX_reg[23]_i_6/O[1]
+                         net (fo=2, routed)           0.828     4.307    in11[21]
+    SLICE_X55Y4          LUT2 (Prop_lut2_I1_O)        0.306     4.613 r  bill_10[0]_i_12/O
+                         net (fo=1, routed)           0.000     4.613    bill_10[0]_i_12_n_0
+    SLICE_X55Y4          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550     5.163 r  bill_10_reg[0]_i_5/CO[3]
+                         net (fo=1, routed)           0.000     5.163    bill_10_reg[0]_i_5_n_0
+    SLICE_X55Y5          CARRY4 (Prop_carry4_CI_CO[2])
+                                                      0.228     5.391 r  bill_10_reg[0]_i_4/CO[2]
+                         net (fo=4, routed)           1.410     6.800    NEXT_STATE210_in
+    SLICE_X62Y9          LUT6 (Prop_lut6_I1_O)        0.313     7.113 r  COSTX[31]_i_4/O
+                         net (fo=1, routed)           0.809     7.922    COSTX[31]_i_4_n_0
+    SLICE_X59Y9          LUT6 (Prop_lut6_I3_O)        0.124     8.046 r  COSTX[31]_i_1/O
+                         net (fo=32, routed)          1.326     9.372    COSTX[31]_i_1_n_0
+    SLICE_X54Y8          FDRE                                         r  COSTX_reg[25]/CE
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 COSTX_reg[1]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            COSTX_reg[0]/CE
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        9.363ns  (logic 3.425ns (36.578%)  route 5.938ns (63.422%))
+  Logic Levels:           13  (CARRY4=8 FDRE=1 LUT1=1 LUT2=1 LUT6=2)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X63Y0          FDRE                         0.000     0.000 r  COSTX_reg[1]/C
+    SLICE_X63Y0          FDRE (Prop_fdre_C_Q)         0.456     0.456 f  COSTX_reg[1]/Q
+                         net (fo=12, routed)          1.574     2.030    COSTX_reg_n_0_[1]
+    SLICE_X54Y0          LUT1 (Prop_lut1_I0_O)        0.124     2.154 r  COSTX[0]_i_4/O
+                         net (fo=1, routed)           0.000     2.154    COSTX[0]_i_4_n_0
+    SLICE_X54Y0          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     2.687 r  COSTX_reg[0]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     2.687    COSTX_reg[0]_i_2_n_0
+    SLICE_X54Y1          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     2.804 r  COSTX_reg[7]_i_6/CO[3]
+                         net (fo=1, routed)           0.000     2.804    COSTX_reg[7]_i_6_n_0
+    SLICE_X54Y2          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     2.921 r  COSTX_reg[11]_i_6/CO[3]
+                         net (fo=1, routed)           0.000     2.921    COSTX_reg[11]_i_6_n_0
+    SLICE_X54Y3          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.038 r  COSTX_reg[15]_i_6/CO[3]
+                         net (fo=1, routed)           0.000     3.038    COSTX_reg[15]_i_6_n_0
+    SLICE_X54Y4          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.155 r  COSTX_reg[19]_i_6/CO[3]
+                         net (fo=1, routed)           0.000     3.155    COSTX_reg[19]_i_6_n_0
+    SLICE_X54Y5          CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.323     3.478 f  COSTX_reg[23]_i_6/O[1]
+                         net (fo=2, routed)           0.828     4.307    in11[21]
+    SLICE_X55Y4          LUT2 (Prop_lut2_I1_O)        0.306     4.613 r  bill_10[0]_i_12/O
+                         net (fo=1, routed)           0.000     4.613    bill_10[0]_i_12_n_0
+    SLICE_X55Y4          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550     5.163 r  bill_10_reg[0]_i_5/CO[3]
+                         net (fo=1, routed)           0.000     5.163    bill_10_reg[0]_i_5_n_0
+    SLICE_X55Y5          CARRY4 (Prop_carry4_CI_CO[2])
+                                                      0.228     5.391 r  bill_10_reg[0]_i_4/CO[2]
+                         net (fo=4, routed)           1.410     6.800    NEXT_STATE210_in
+    SLICE_X62Y9          LUT6 (Prop_lut6_I1_O)        0.313     7.113 r  COSTX[31]_i_4/O
+                         net (fo=1, routed)           0.809     7.922    COSTX[31]_i_4_n_0
+    SLICE_X59Y9          LUT6 (Prop_lut6_I3_O)        0.124     8.046 r  COSTX[31]_i_1/O
+                         net (fo=32, routed)          1.317     9.363    COSTX[31]_i_1_n_0
+    SLICE_X63Y0          FDRE                                         r  COSTX_reg[0]/CE
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 COSTX_reg[1]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            COSTX_reg[1]/CE
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        9.363ns  (logic 3.425ns (36.578%)  route 5.938ns (63.422%))
+  Logic Levels:           13  (CARRY4=8 FDRE=1 LUT1=1 LUT2=1 LUT6=2)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X63Y0          FDRE                         0.000     0.000 r  COSTX_reg[1]/C
+    SLICE_X63Y0          FDRE (Prop_fdre_C_Q)         0.456     0.456 f  COSTX_reg[1]/Q
+                         net (fo=12, routed)          1.574     2.030    COSTX_reg_n_0_[1]
+    SLICE_X54Y0          LUT1 (Prop_lut1_I0_O)        0.124     2.154 r  COSTX[0]_i_4/O
+                         net (fo=1, routed)           0.000     2.154    COSTX[0]_i_4_n_0
+    SLICE_X54Y0          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     2.687 r  COSTX_reg[0]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     2.687    COSTX_reg[0]_i_2_n_0
+    SLICE_X54Y1          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     2.804 r  COSTX_reg[7]_i_6/CO[3]
+                         net (fo=1, routed)           0.000     2.804    COSTX_reg[7]_i_6_n_0
+    SLICE_X54Y2          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     2.921 r  COSTX_reg[11]_i_6/CO[3]
+                         net (fo=1, routed)           0.000     2.921    COSTX_reg[11]_i_6_n_0
+    SLICE_X54Y3          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.038 r  COSTX_reg[15]_i_6/CO[3]
+                         net (fo=1, routed)           0.000     3.038    COSTX_reg[15]_i_6_n_0
+    SLICE_X54Y4          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.155 r  COSTX_reg[19]_i_6/CO[3]
+                         net (fo=1, routed)           0.000     3.155    COSTX_reg[19]_i_6_n_0
+    SLICE_X54Y5          CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.323     3.478 f  COSTX_reg[23]_i_6/O[1]
+                         net (fo=2, routed)           0.828     4.307    in11[21]
+    SLICE_X55Y4          LUT2 (Prop_lut2_I1_O)        0.306     4.613 r  bill_10[0]_i_12/O
+                         net (fo=1, routed)           0.000     4.613    bill_10[0]_i_12_n_0
+    SLICE_X55Y4          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550     5.163 r  bill_10_reg[0]_i_5/CO[3]
+                         net (fo=1, routed)           0.000     5.163    bill_10_reg[0]_i_5_n_0
+    SLICE_X55Y5          CARRY4 (Prop_carry4_CI_CO[2])
+                                                      0.228     5.391 r  bill_10_reg[0]_i_4/CO[2]
+                         net (fo=4, routed)           1.410     6.800    NEXT_STATE210_in
+    SLICE_X62Y9          LUT6 (Prop_lut6_I1_O)        0.313     7.113 r  COSTX[31]_i_4/O
+                         net (fo=1, routed)           0.809     7.922    COSTX[31]_i_4_n_0
+    SLICE_X59Y9          LUT6 (Prop_lut6_I3_O)        0.124     8.046 r  COSTX[31]_i_1/O
+                         net (fo=32, routed)          1.317     9.363    COSTX[31]_i_1_n_0
+    SLICE_X63Y0          FDRE                                         r  COSTX_reg[1]/CE
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 COSTX_reg[1]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            COSTX_reg[10]/CE
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        9.212ns  (logic 3.425ns (37.179%)  route 5.787ns (62.821%))
+  Logic Levels:           13  (CARRY4=8 FDRE=1 LUT1=1 LUT2=1 LUT6=2)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X63Y0          FDRE                         0.000     0.000 r  COSTX_reg[1]/C
+    SLICE_X63Y0          FDRE (Prop_fdre_C_Q)         0.456     0.456 f  COSTX_reg[1]/Q
+                         net (fo=12, routed)          1.574     2.030    COSTX_reg_n_0_[1]
+    SLICE_X54Y0          LUT1 (Prop_lut1_I0_O)        0.124     2.154 r  COSTX[0]_i_4/O
+                         net (fo=1, routed)           0.000     2.154    COSTX[0]_i_4_n_0
+    SLICE_X54Y0          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     2.687 r  COSTX_reg[0]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     2.687    COSTX_reg[0]_i_2_n_0
+    SLICE_X54Y1          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     2.804 r  COSTX_reg[7]_i_6/CO[3]
+                         net (fo=1, routed)           0.000     2.804    COSTX_reg[7]_i_6_n_0
+    SLICE_X54Y2          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     2.921 r  COSTX_reg[11]_i_6/CO[3]
+                         net (fo=1, routed)           0.000     2.921    COSTX_reg[11]_i_6_n_0
+    SLICE_X54Y3          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.038 r  COSTX_reg[15]_i_6/CO[3]
+                         net (fo=1, routed)           0.000     3.038    COSTX_reg[15]_i_6_n_0
+    SLICE_X54Y4          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.155 r  COSTX_reg[19]_i_6/CO[3]
+                         net (fo=1, routed)           0.000     3.155    COSTX_reg[19]_i_6_n_0
+    SLICE_X54Y5          CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.323     3.478 f  COSTX_reg[23]_i_6/O[1]
+                         net (fo=2, routed)           0.828     4.307    in11[21]
+    SLICE_X55Y4          LUT2 (Prop_lut2_I1_O)        0.306     4.613 r  bill_10[0]_i_12/O
+                         net (fo=1, routed)           0.000     4.613    bill_10[0]_i_12_n_0
+    SLICE_X55Y4          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550     5.163 r  bill_10_reg[0]_i_5/CO[3]
+                         net (fo=1, routed)           0.000     5.163    bill_10_reg[0]_i_5_n_0
+    SLICE_X55Y5          CARRY4 (Prop_carry4_CI_CO[2])
+                                                      0.228     5.391 r  bill_10_reg[0]_i_4/CO[2]
+                         net (fo=4, routed)           1.410     6.800    NEXT_STATE210_in
+    SLICE_X62Y9          LUT6 (Prop_lut6_I1_O)        0.313     7.113 r  COSTX[31]_i_4/O
+                         net (fo=1, routed)           0.809     7.922    COSTX[31]_i_4_n_0
+    SLICE_X59Y9          LUT6 (Prop_lut6_I3_O)        0.124     8.046 r  COSTX[31]_i_1/O
+                         net (fo=32, routed)          1.166     9.212    COSTX[31]_i_1_n_0
+    SLICE_X65Y1          FDRE                                         r  COSTX_reg[10]/CE
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 FSM_onehot_show_reg[2]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            FSM_onehot_next_show_reg[3]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.272ns  (logic 0.141ns (51.877%)  route 0.131ns (48.123%))
+  Logic Levels:           1  (FDRE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X62Y17         FDRE                         0.000     0.000 r  FSM_onehot_show_reg[2]/C
+    SLICE_X62Y17         FDRE (Prop_fdre_C_Q)         0.141     0.141 r  FSM_onehot_show_reg[2]/Q
+                         net (fo=7, routed)           0.131     0.272    FSM_onehot_show_reg_n_0_[2]
+    SLICE_X62Y16         LDCE                                         r  FSM_onehot_next_show_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 FSM_onehot_show_reg[1]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            FSM_onehot_next_show_reg[2]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.277ns  (logic 0.141ns (50.863%)  route 0.136ns (49.137%))
+  Logic Levels:           1  (FDRE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X59Y16         FDRE                         0.000     0.000 r  FSM_onehot_show_reg[1]/C
+    SLICE_X59Y16         FDRE (Prop_fdre_C_Q)         0.141     0.141 r  FSM_onehot_show_reg[1]/Q
+                         net (fo=6, routed)           0.136     0.277    FSM_onehot_show_reg_n_0_[1]
+    SLICE_X60Y16         LDCE                                         r  FSM_onehot_next_show_reg[2]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 FSM_onehot_next_show_reg[5]/G
+                            (positive level-sensitive latch)
+  Destination:            FSM_onehot_show_reg[5]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.278ns  (logic 0.178ns (64.028%)  route 0.100ns (35.972%))
+  Logic Levels:           1  (LDCE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X60Y16         LDCE                         0.000     0.000 r  FSM_onehot_next_show_reg[5]/G
+    SLICE_X60Y16         LDCE (EnToQ_ldce_G_Q)        0.178     0.178 r  FSM_onehot_next_show_reg[5]/Q
+                         net (fo=1, routed)           0.100     0.278    FSM_onehot_next_show_reg_n_0_[5]
+    SLICE_X59Y16         FDRE                                         r  FSM_onehot_show_reg[5]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 FSM_onehot_next_show_reg[0]/G
+                            (positive level-sensitive latch)
+  Destination:            FSM_onehot_show_reg[0]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.279ns  (logic 0.158ns (56.542%)  route 0.121ns (43.458%))
+  Logic Levels:           1  (LDCE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X62Y16         LDCE                         0.000     0.000 r  FSM_onehot_next_show_reg[0]/G
+    SLICE_X62Y16         LDCE (EnToQ_ldce_G_Q)        0.158     0.158 r  FSM_onehot_next_show_reg[0]/Q
+                         net (fo=1, routed)           0.121     0.279    FSM_onehot_next_show_reg_n_0_[0]
+    SLICE_X62Y17         FDRE                                         r  FSM_onehot_show_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 FSM_onehot_show_reg[0]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            FSM_onehot_next_show_reg[1]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.283ns  (logic 0.141ns (49.857%)  route 0.142ns (50.143%))
+  Logic Levels:           1  (FDRE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X62Y17         FDRE                         0.000     0.000 r  FSM_onehot_show_reg[0]/C
+    SLICE_X62Y17         FDRE (Prop_fdre_C_Q)         0.141     0.141 r  FSM_onehot_show_reg[0]/Q
+                         net (fo=7, routed)           0.142     0.283    FSM_onehot_show_reg_n_0_[0]
+    SLICE_X60Y16         LDCE                                         r  FSM_onehot_next_show_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 FSM_onehot_show_reg[3]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            FSM_onehot_next_show_reg[4]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.286ns  (logic 0.141ns (49.336%)  route 0.145ns (50.664%))
+  Logic Levels:           1  (FDRE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X62Y17         FDRE                         0.000     0.000 r  FSM_onehot_show_reg[3]/C
+    SLICE_X62Y17         FDRE (Prop_fdre_C_Q)         0.141     0.141 r  FSM_onehot_show_reg[3]/Q
+                         net (fo=8, routed)           0.145     0.286    FSM_onehot_show_reg_n_0_[3]
+    SLICE_X62Y16         LDCE                                         r  FSM_onehot_next_show_reg[4]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 bill_1_reg[1]/C
+                            (rising edge-triggered cell FDSE)
+  Destination:            bill_1_reg[2]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.296ns  (logic 0.186ns (62.765%)  route 0.110ns (37.235%))
+  Logic Levels:           2  (FDSE=1 LUT4=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X53Y10         FDSE                         0.000     0.000 r  bill_1_reg[1]/C
+    SLICE_X53Y10         FDSE (Prop_fdse_C_Q)         0.141     0.141 r  bill_1_reg[1]/Q
+                         net (fo=6, routed)           0.110     0.251    bill_1_reg_n_0_[1]
+    SLICE_X52Y10         LUT4 (Prop_lut4_I1_O)        0.045     0.296 r  bill_1[2]_i_1/O
+                         net (fo=1, routed)           0.000     0.296    bill_1[2]_i_1_n_0
+    SLICE_X52Y10         FDSE                                         r  bill_1_reg[2]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 bill_1_reg[1]/C
+                            (rising edge-triggered cell FDSE)
+  Destination:            bill_1_reg[3]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.299ns  (logic 0.189ns (63.138%)  route 0.110ns (36.862%))
+  Logic Levels:           2  (FDSE=1 LUT5=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X53Y10         FDSE                         0.000     0.000 r  bill_1_reg[1]/C
+    SLICE_X53Y10         FDSE (Prop_fdse_C_Q)         0.141     0.141 r  bill_1_reg[1]/Q
+                         net (fo=6, routed)           0.110     0.251    bill_1_reg_n_0_[1]
+    SLICE_X52Y10         LUT5 (Prop_lut5_I3_O)        0.048     0.299 r  bill_1[3]_i_1/O
+                         net (fo=1, routed)           0.000     0.299    bill_1[3]_i_1_n_0
+    SLICE_X52Y10         FDSE                                         r  bill_1_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 FSM_onehot_show_reg[5]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            TEN_reg[2]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.309ns  (logic 0.141ns (45.667%)  route 0.168ns (54.333%))
+  Logic Levels:           1  (FDRE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X59Y16         FDRE                         0.000     0.000 r  FSM_onehot_show_reg[5]/C
+    SLICE_X59Y16         FDRE (Prop_fdre_C_Q)         0.141     0.141 r  FSM_onehot_show_reg[5]/Q
+                         net (fo=8, routed)           0.168     0.309    FSM_onehot_show_reg_n_0_[5]
+    SLICE_X60Y17         LDCE                                         r  TEN_reg[2]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 FSM_onehot_next_show_reg[4]/G
+                            (positive level-sensitive latch)
+  Destination:            FSM_onehot_show_reg[4]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.309ns  (logic 0.158ns (51.144%)  route 0.151ns (48.856%))
+  Logic Levels:           1  (LDCE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X62Y16         LDCE                         0.000     0.000 r  FSM_onehot_next_show_reg[4]/G
+    SLICE_X62Y16         LDCE (EnToQ_ldce_G_Q)        0.158     0.158 r  FSM_onehot_next_show_reg[4]/Q
+                         net (fo=1, routed)           0.151     0.309    FSM_onehot_next_show_reg_n_0_[4]
+    SLICE_X62Y17         FDRE                                         r  FSM_onehot_show_reg[4]/D
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+
